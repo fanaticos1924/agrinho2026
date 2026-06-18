@@ -1,0 +1,192 @@
+/* ==========================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #2e7d32; /* Cor principal (Sustentabilidade) */
+    --verde-claro: #81c784; /* Detalhes e bordas */
+    --cor-acento: #e67e22; /* Laranja para botões de destaque */
+    --fundo-pagina: #f4f7f5; /* Off-white levemente esverdeado */
+    --cor-texto: #2c3e50; /* Cinza escuro para melhor leitura */
+    --branco: #ffffff;
+    --fonte-principal: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--fundo-pagina);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Ocultar linhas horizontais já que usaremos cards visuais */
+hr {
+    display: none;
+}
+
+/* ==========================================
+   LAYOUT DO CONTEÚDO
+   ========================================== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--branco);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================== */
+header {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header strong {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--verde-claro);
+}
+
+/* ==========================================
+   TIPOGRAFIA
+   ========================================== */
+h1, h2, h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.7rem;
+    border-bottom: 3px solid var(--verde-claro);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-top: 25px;
+    color: #388e3c;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+em {
+    color: #555;
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DE SEÇÕES ESPECÍFICAS
+   ========================================== */
+
+/* Seção Inicial (Hero) */
+#inicio {
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #e8f5e9 100%);
+    padding: 50px 40px;
+}
+
+#inicio p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Simulador de Imagens / Gráficos (Tags [Imagem...]) */
+p strong {
+    display: block;
+    background: #e8f5e9;
+    color: var(--verde-escuro);
+    padding: 40px 20px;
+    text-align: center;
+    border: 2px dashed var(--verde-claro);
+    border-radius: 8px;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+/* Listas e Definições */
+ul, dl {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: var(--verde-escuro);
+}
+
+dd {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Botões */
+button, input[type="submit"] {
+    background-color: var(--cor-acento);
+    color: var(--branco);
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background
